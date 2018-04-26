@@ -1,31 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-        <cdh.version>cdh5.5.2</cdh.version>
-        <!--add  maven release-->
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <encoding>UTF-8</encoding>
-        <scala.tools.version>2.10</scala.tools.version>
-        <scala.version>2.10.4</scala.version>
-    </properties>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>MyDubbo</groupId>
-  <artifactId>dubbo-api</artifactId>
-  <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>dubbo-api Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>dubbo-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <parent>
+        <artifactId>MyDubbo</artifactId>
+        <groupId>MyDubbo</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   <build>
     <finalName>dubbo-api</finalName>
