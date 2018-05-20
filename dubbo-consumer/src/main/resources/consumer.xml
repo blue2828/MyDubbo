@@ -7,7 +7,8 @@
        http://code.alibabatech.com/schema/dubbo
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <dubbo:application name="demoTest-consumer" owner="programmer" organization="dubbox" />
-    <dubbo:registry address="zookeeper://182.90.34.203:2181" />
+    <dubbo:registry address="zookeeper://localhost:2181"  />
+    <dubbo:protocol name="dubbo" port="20880" />
     <dubbo:reference id="demoService" interface="com.lyh.dubbo.demo.IDemoService"/>
     <dubbo:reference id="userServices" interface="com.lyh.dubbo.demo.IUserService"/>
     <dubbo:reference id="helloWorldService" interface="com.lyh.dubbo.demo.IHelloWorldService"/>

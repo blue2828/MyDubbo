@@ -24,7 +24,6 @@
     <module>dubbo-api</module>
     <module>dubbo-consumer</module>
     <module>dubbo-consumer2</module>
-    <module>dubbo-api</module>
     <module>dubbo-provider</module>
   </modules>
   <groupId>MyDubbo</groupId>
@@ -36,7 +35,8 @@
   </build>
 
   <dependencies>
-  <!-- 添加jstl依赖 -->
+
+    <!-- 添加jstl依赖 -->
   <dependency>
     <groupId>jstl</groupId>
     <artifactId>jstl</artifactId>
@@ -94,7 +94,6 @@
       <artifactId>spring-data-redis</artifactId>
       <version>1.7.2.RELEASE</version>
     </dependency>
-
 
     <dependency>
       <groupId>org.mybatis</groupId>
@@ -213,7 +212,13 @@
     <version>2.2.1</version>
   </dependency>
 
-  <dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>4.3.9.RELEASE</version>
+    </dependency>
+
+    <dependency>
     <groupId>org.apache.zookeeper</groupId>
     <artifactId>zookeeper</artifactId>
     <version>3.4.9</version>
@@ -235,6 +240,20 @@
     <artifactId>zkclient</artifactId>
     <version>0.10</version>
   </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>${log4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
   </dependencies>
-
 </project>

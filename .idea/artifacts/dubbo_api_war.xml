@@ -3,6 +3,13 @@
     <output-path>$PROJECT_DIR$/dubbo-api/target</output-path>
     <root id="archive" name="dubbo-api.war">
       <element id="artifact" artifact-name="dubbo-api:war exploded" />
+      <element id="javaee-facet-resources" facet="dubbo-provider/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="javaee-facet-resources" facet="dubbo-provider/web/Web" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="dubbo-provider/web/Web" />
     </root>
   </artifact>
 </component>

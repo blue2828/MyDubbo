@@ -70,7 +70,7 @@
         <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation"/>
     </aop:config>
     <dubbo:application name="demoTest-provider" owner="programmer" organization="dubbox" />
-    <dubbo:registry address="zookeeper://182.90.34.203:2181" />
+    <dubbo:registry address="zookeeper://localhost:2181"  />
     <dubbo:protocol name="dubbo" port="20880" />
     <dubbo:service interface="com.lyh.dubbo.demo.IDemoService" ref="demoService" protocol="dubbo"/>
     <dubbo:service interface="com.lyh.dubbo.demo.IUserService" ref="userService" protocol="dubbo"/>
